@@ -1,0 +1,88 @@
+#tops{
+    background-color: white;
+    position: fixed;
+    width: 98.95%;
+    top: 0%;
+}
+#ftops{
+    width: 100%;
+    text-align: center;
+}
+#searchplace{
+width: 100%;
+float: right;
+padding-bottom: 15px;
+}
+.btn1{
+float: left;
+margin-left: 150px;
+}
+.btn2{
+ float: right;
+  margin-right: 150px;  
+}
+#sex{
+    width: 100%;
+    height: 500px;
+}
+#sex h1{
+    margin-top: 0;
+    text-align: center;
+}
+
+#men{
+width: fit-content;
+float: left;
+margin-left: 150px;
+width: 550px;
+height: 500px;
+}
+
+#women{
+  width: fit-content;  
+  float: right;
+  margin-right: 150px;
+  width: 550px;
+  height: 500px;
+}
+.rep img{
+  width: 100%; 
+  height: 100%; 
+}
+
+#newItems{
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+#newItems::-webkit-scrollbar{
+    width: 0px;
+}
+.cnewItems img{
+ max-height: 400px;
+ min-width: 400px;
+ height: 400px;
+ line-height: 400px;
+ text-align: center;
+ padding: 5px;
+}
+#items{
+width: 100%;
+text-align: center;
+}
+.cItems img{
+width: 500px;
+height: 450px;
+text-align: center;
+padding: 5px;
+}
+#info{
+width: 100%;
+height: 100px;
+text-align: center;
+padding-top: 50px;
+}
+#footer{
+width: 100%;
+text-align: center;
+}
