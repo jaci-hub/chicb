@@ -3,18 +3,32 @@
 <head>
     <title>chic boutique</title>
     <link rel="stylesheet" type="text/css" href="cbstyle.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        function search(){
+            menItems=["n1", "n2", "n3", "n5"];
+            a=document.getElementById("inpt").value;
+            for(i=0;i<5;i++)
+            {
+                if(a==menItems[i])
+                alert("found "+menItems[i]);
+                else
+                alert("Not found");
+            }
+        }
+    </script>
 </head>
 <body>
     <br><br><br>
 <div id="tops">
-    <h1 id="ftops"><a class="ftop" href="" >Chic Boutique</a></h1>
+    <h1 id="ftops"><a class="ftop" href="homepage.html" >Chic Boutique</a></h1>
         <div id="searchplace">
-            <div class="btn1">
-                <button id="btn1" type="button" onclick="donate()">Donate here!</button>
+            <div class="dona">
+                <a href="donate.html">Donate!</a>
             </div>
                     
             <div class="btn2">
-                <input type="text" placeholder="Search">
+                <input id="inpt" type="text" placeholder="Look for an item">
                 <button id="btn2" type="button" onclick="search()">Search</button>
             </div>
         </div>
@@ -24,13 +38,13 @@
 <div id="container">
     <div id="sex">
         <div id="men" class="rep">
-            <img onclick="men()" src="men.png">
-            <h1>MEN'S</h1>
+            <img src="men.png">
+            <h1><a href="mens.html">MEN'S</a></h1>
         </div>
         
         <div id="women" class="rep">
-            <img onclick="women()" src="women.jpg">
-            <h1>WOMEN'S</h1>
+            <img src="women.jpg">
+            <h1><a href="womens.html">WOMEN'S</a></h1>
         </div>
     </div>
 
@@ -44,7 +58,7 @@
         <img src="h.jpg">
     </div>
 
-<br><br>
+ <br><br>
 
     <div id="items" class="cItems">
         <h2>MORE FOR YOU</h2>
@@ -60,20 +74,20 @@
         </ul> 
     </div>
 
-<br><br>
+ <br><br>
 
     <div id="info">
-        <a class="selected" href="">About us</a>
-        <a class="selected" href="">Meet our team</a>
-        <a class="selected" href="">Contact us</a>
-        <a class="selected" href="">Returns</a>
-        <br>
-        <a class="selected" href="">facebook</a>
-        <a class="selected" href="">instagram</a>
-        <a class="selected" href="">youtube</a>
+        <a class="selected" href="aboutus.html">About us</a>
+        <a class="selected" href="meetourteam.html">Meet our team</a>
+        <a class="selected" href="contactus.html">Contact us</a>
+        <a class="selected" href="returns.html">Returns</a>
+        <br><br>
+        <a class="fa fa-facebook" href=""></a>
+        <a class="fa fa-instagram" href=""></a>
+        <a class="fa fa-youtube" href=""></a>
     </div>
 
-<br><br>
+ <br><br>
 
     <div id="footer">
         copyright &copy; 2020 Chic Boutique.
