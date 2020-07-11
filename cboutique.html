@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>chic boutique</title>
-    <link rel="stylesheet" type="text/css" href="cbstyle.css"/>
+    <link rel="stylesheet" type="text/css" href="cbstyle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript">
-        function search(){
-            menItems=["n1", "n2", "n3", "n5"];
-            a=document.getElementById("inpt").value;
-            for(i=0;i<5;i++)
-            {
-                if(a==menItems[i])
-                alert("found "+menItems[i]);
+        function search() {
+            menItems = ["n1", "n2", "n3", "n5"];
+            a = document.getElementById("inpt").value;
+            for (i = 0; i < 5; i++) {
+                if (a == menItems[i])
+                    alert("found " + menItems[i]);
                 else
-                alert("Not found");
+                    alert("Not found");
             }
         }
     </script>
 </head>
+
 <body>
     <br><br><br>
-<div id="tops">
-    <h1 id="ftops"><a class="ftop" href="homepage.html" >Chic Boutique</a></h1>
+    <div id="tops">
+        <h1 id="ftops"><a class="ftop" href="homepage.html">Chic Boutique</a></h1>
         <div id="searchplace">
             <div class="dona">
-                <a href="donate.html">Donate!</a>
+                <a href="donate.html">Donate</a>
             </div>
-                    
+
             <div class="btn2">
                 <input id="inpt" type="text" placeholder="Look for an item">
                 <button id="btn2" type="button" onclick="search()">Search</button>
             </div>
         </div>
-                     
-</div>
-        <br><br><br><br><br><br>
-<div id="container">
-    <div id="sex">
-        <div id="men" class="rep">
-            <img src="men.png">
-            <h1><a href="mens.html">MEN'S</a></h1>
-        </div>
-        
-        <div id="women" class="rep">
-            <img src="women.jpg">
-            <h1><a href="womens.html">WOMEN'S</a></h1>
-        </div>
-    </div>
 
+    </div>
     <br><br><br><br><br><br>
-    <h2 style="text-align: center;">See What's New</h2>
-    <div id="newItems" class="cnewItems">
-        <img src="b.jpg">
-        <img src="d.jpg">
-        <img src="f.jpg">
-        <img src="g.jpg">
-        <img src="h.jpg">
-    </div>
+    <div id="container">
+        <div id="sex">
+            <a href="mens.html">
+                <div id="men" class="rep">
+                    <h1>MEN'S</h1>
+                </div>
+            </a>
 
- <br><br>
+            <a href="womens.html">
+                <div id="women" class="rep">
+                    <h1>WOMEN'S</h1>
+                </div>
+            </a>
+        </div>
 
-    <div id="items" class="cItems">
-        <h2>MORE FOR YOU</h2>
-        <ul>
-            <img src="i.jpg">
-            <img src="k.jfif">
-            <img src="l.jpg">
-            <img src="m.jpg">
-            <img src="n.jfif">
-            <img src="q.jpg">
-            <img src="r.jfif">
-            <img src="y.jpg">
-        </ul> 
-    </div>
+        <br><br><br><br><br><br>
+        <h2 style="text-align: center;">RECENTLY ADDED</h2>
+        <div id="newItems" class="cnewItems">
+            <div id="slider">
+                <div id="slide">
+                    <a href=""><img src="f.jpg"></a>
+                    <a href=""><img src="f.jpg"></a>
+                    <a href=""><img src="f.jpg"></a>
+                    <a href=""><img src="f.jpg"></a>
+                    <a href=""><img src="f.jpg"></a>
+                </div>
+            </div>
+        </div>
 
- <br><br>
-
-    <div id="info">
-        <a class="selected" href="aboutus.html">About us</a>
-        <a class="selected" href="meetourteam.html">Meet our team</a>
-        <a class="selected" href="contactus.html">Contact us</a>
-        <a class="selected" href="returns.html">Returns</a>
         <br><br>
-        <a class="fa fa-facebook" href=""></a>
-        <a class="fa fa-instagram" href=""></a>
-        <a class="fa fa-youtube" href=""></a>
-    </div>
+        <h2 style="text-align: center;">MORE FOR YOU</h2>
+        <div id="items" class="cItems">
+            <a href=""><img src="k.jfif"></a>
+            <a href=""><img src="k.jfif"></a>
+            <a href=""><img src="k.jfif"></a>
+            <a href=""><img src="k.jfif"></a>
+            <a href=""><img src="k.jfif"></a>
+            <a href=""><img src="k.jfif"></a>
+            <a href=""><img src="k.jfif"></a>
+            <a href=""><img src="k.jfif"></a>
+        </div>
 
- <br><br>
+        <br><br>
 
-    <div id="footer">
-        copyright &copy; 2020 Chic Boutique.
+        <div id="info">
+            <a class="groupinfo" href="aboutus.html">About us</a>
+            <a class="groupinfo" href="meetourteam.html">Meet our team</a>
+            <a class="groupinfo" href="contactus.html">Contact us</a>
+            <a class="groupinfo" href="returns.html">Returns</a>
+            <br><br>
+            <a class="fa fa-facebook" href=""></a>
+            <a class="fa fa-instagram" href=""></a>
+        </div>
+
+        <br><br>
+
+        <div id="footer">
+            copyright &copy; 2020 Chic Boutique.
+        </div>
     </div>
-</div>
 </body>
+
 </html>

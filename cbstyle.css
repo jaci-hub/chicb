@@ -1,24 +1,23 @@
+a{
+  text-decoration: none;
+}
 /*HAS EVERYTHING TILL SEARCH*/
 #tops{
-  border: solid 1px black;
-    background-color: white;
-    position: fixed;
-    width: 98.95%;
-    top: 0%;
+  background-color: white;
+  position: fixed;
+  width: 98.95%;
+  top: 0%;
 }
 /*HAS THE CHIC BOUTIQUE HEADING*/
 #ftops{
-  border: solid 1px violet;
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 #ftops a{
-  text-decoration: none;
   color: black;
 }
 /*HAS THE DONATION AND SEARCH DIVISION*/
 #searchplace{
-  border: solid 1px green;
 width: 100%;
 float: right;
 padding-bottom: 15px;
@@ -28,27 +27,25 @@ padding-bottom: 15px;
 float: left;
 margin-left: 150px;
 background: none;
-border: solid 2px greenyellow;
 border-radius: 3px;
 font-size: large;
 padding: 5px;
 }
 .dona a{
-  text-decoration: none;
   color: black;
 }
-.dona:hover{
- background-color: greenyellow;
-}
+
 /*SEARCH DIVISION*/
 .btn2{
  float: right;
  margin-right: 150px;  
 }
+
 /*MEN AND WOMEN SIDE-BY-SIDE*/
 #sex{
 width: 100%;
 height: 500px;
+justify-content: center;
 }
 /*MEN AND WOMEN SIDE-BY-SIDE HEADINGS*/
 #sex h1{
@@ -57,100 +54,109 @@ text-align: center;
 }
 /*MEN SECTION*/
 #men{
-width: fit-content;
-float: left;
-margin-left: 150px;
-width: 550px;
-height: 500px;
-}
-#men a{
-  text-decoration: none;
-  color: black;
+  float: left;
+  margin-left: 150px;
+background-image: url(men.png);
 }
 #thesex h1{
-    width: 100%;
-    text-align: center;
+width: 100%;
+text-align: center;
 }
 #thehead{
   width: 100%;
   display: flex;
   overflow-x: auto;
+  justify-content: center;
+}
+.thehead a{
+  padding: 10px;
 }
 #thehead::-webkit-scrollbar{
  width: 0px;
 }
-#thehead img{
- max-height: 400px;
- min-width: 400px;
- height: 400px;
- line-height: 400px;
- justify-content: center;
- padding: 50px;
-}
 #thehead1{
-width: 100%;
-justify-content: center;
-text-align: center;
+  justify-content: center;
+  text-align: center;
 }
-.thehead1 img{
-width: 500px;
-height: 450px;
-justify-content: center;
-padding: 50px;
+#thehead1 img{
+  padding: 10px;
+  height: 500px;
+  width: 450px;
 }
+.cmenima{
+  background-image: url(b.jpg);
+  padding: 20px;
+}
+.cmenima{
+background-size: cover;
+width: 300px;
+height: 350px;
+margin:50px auto;
+}
+.cmenima h1{
+padding-top: 50%;
+color: white;
+}
+.cmenima:hover{
+transition: .5s;
+transform: scale(1.09);
+}
+
 /*WOMEN SECTION*/
 #women{
-  width: fit-content;  
   float: right;
   margin-right: 150px;
-  width: 550px;
-  height: 500px;
+background-image: url(women.jpg);
 }
-#women a{
-  text-decoration: none;
-  color: black;
-}
+
 #thewomen{
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 /*THE 2 IMAGES THAT REPRESENT MEN AND WOMEN SECTIONS*/
-.rep img{
-  width: 100%; 
-  height: 100%; 
+.rep{
+background-size: cover;
+width: fit-content;
+float: left;
+width: 550px;
+height: 500px;
+}
+.rep h1{
+  padding-top: 45%;
+  color: white;
+}
+.rep:hover{
+ filter: brightness(.89); 
+transition: .5s;
 }
 /*NEW ITEMS GENERAL*/
 #newItems{
-  border: solid 1px red;
   width: 90%;
   display: flex;
   padding: 10px;
   margin: 10px auto;
   justify-content: center; 
-  overflow-x: auto;
+  align-items: center;
 }
-#newItems::-webkit-scrollbar{
- width: 0px;
-}
-
-#ima{
- border: solid 1px black;
- width: 300px;
- height: 350px;
+.cnewItems img{
+ width: 400px;
+ height: 450px;
  justify-content: center;
  box-sizing: border-box;
  margin: 0px 10px;
 }
-#ima:hover{
-  transform: scale(1.2);
-  transition: .5s;
+#slider{
+  overflow-x: auto;
+}
+#slide{
+  display: flex;
+  align-items: center;
 }
 
 /*ITEMS GENERAL*/
 #items{
 padding: 50px;
 margin: 10px auto;
-border: solid 1px red;
 width: 90%;
 justify-content: center;
 text-align: center;
@@ -162,10 +168,7 @@ justify-content: center;
 margin: 20px;
 box-sizing: border-box;
 }
-.cItems img:hover{
-  transform: scale(1.1);
-  transition: .5s;
-}
+
 /*INFO*/
 #info{
 width: 100%;
@@ -175,7 +178,6 @@ padding-top: 50px;
 padding-bottom: 50px;
 }
 #info a{
-  text-decoration: none;
   font-size: larger;
   color: black;
   margin: 10px;
