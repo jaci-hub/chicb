@@ -5,54 +5,52 @@
     <title>chic boutique</title>
     <link rel="stylesheet" type="text/css" href="cbstyle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript">
-        function search() {
-            menItems = ["n1", "n2", "n3", "n5"];
-            a = document.getElementById("inpt").value;
-            for (i = 0; i < 5; i++) {
-                if (a == menItems[i])
-                    alert("found " + menItems[i]);
-                else
-                    alert("Not found");
-            }
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=.1"> 
 </head>
 
 <body>
-    <br><br><br>
-    <div id="tops">
-        <h1 id="ftops"><a class="ftop" href="homepage.html">Chic Boutique</a></h1>
-        <div id="searchplace">
-            <div class="dona">
-                <a href="donate.html">Donate</a>
-            </div>
-
-            <div class="btn2">
-                <input id="inpt" type="text" placeholder="Look for an item">
-                <button id="btn2" type="button" onclick="search()">Search</button>
-            </div>
-        </div>
-
-    </div>
-    <br><br><br><br><br><br>
     <div id="container">
-        <div id="sex">
-            <a href="mens.html">
-                <div id="men" class="rep">
-                    <h1>MEN'S</h1>
+        <br><br><br>
+        <div id="tops">
+            <h1 id="ftops"><a class="ftop" href="homepage.html">Chic Boutique</a></h1>
+            <div id="searchplace">
+                <div id="menu"><i class="fa fa-bars"> Menu</i>
+                    <div id="submenu">
+                        <ul>
+                            <li><a href="homepage.html">Home</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="sizechart.html">Size Chart</a></li>
+                            <li><a  href="aboutus.html">About us</a></li>
+                            <li><a  href="meetourteam.html">Meet our team</a></li>
+                            <li><a  href="contactus.html">Contact us</a></li>
+                            <li><a  href="returns.html">Returns</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </a>
 
-            <a href="womens.html">
-                <div id="women" class="rep">
-                    <h1>WOMEN'S</h1>
+                <div class="dona">
+                    <a href="donate.html">Donate</a>
                 </div>
-            </a>
+            </div>
+
         </div>
-
         <br><br><br><br><br><br>
-        <h2 style="text-align: center;">RECENTLY ADDED</h2>
+        <div id="baixo">
+            <div id="sex">
+                <a id="men" class="rep" href="mens.html">
+                    <div>
+                        <h1>MEN'S</h1>
+                    </div>
+                </a>
+
+                <a id="women" class="rep" href="womens.html">
+                    <div>
+                        <h1>WOMEN'S</h1>
+                    </div>
+                </a>
+            </div>
+            <br><br><br>
+            <h2 style="text-align: center;">RECENTLY ADDED</h2>
             <div id="newItems" class="cnewItems">
                 <div id="slider">
                     <div id="slide">
@@ -64,36 +62,36 @@
                     </div>
                 </div>
             </div>
-
-        <br><br>
-        <h2 style="text-align: center;">MORE FOR YOU</h2>
-        <div id="items" class="cItems">
-                <a href=""><img src="k.jfif"></a>
-                <a href=""><img src="k.jfif"></a>
-                <a href=""><img src="k.jfif"></a>
-                <a href=""><img src="k.jfif"></a>
-                <a href=""><img src="k.jfif"></a>
-                <a href=""><img src="k.jfif"></a>
-                <a href=""><img src="k.jfif"></a>
-                <a href=""><img src="k.jfif"></a>
-        </div>
-
-        <br><br>
-
-        <div id="info">
-            <a class="groupinfo" href="aboutus.html">About us</a>
-            <a class="groupinfo" href="meetourteam.html">Meet our team</a>
-            <a class="groupinfo" href="contactus.html">Contact us</a>
-            <a class="groupinfo" href="returns.html">Returns</a>
+        
             <br><br>
-            <a class="fa fa-facebook" href=""></a>
-            <a class="fa fa-instagram" href=""></a>
-        </div>
-
-        <br><br>
-
-        <div id="footer">
-            copyright &copy; 2020 Chic Boutique.
+            <h2 style="text-align: center;">MORE FOR YOU</h2>
+            <div id="items" class="cItems">
+                <a href=""><img src="k.jfif"></a>
+                <a href=""><img src="k.jfif"></a>
+                <a href=""><img src="k.jfif"></a>
+                <a href=""><img src="k.jfif"></a>
+                <a href=""><img src="k.jfif"></a>
+                <a href=""><img src="k.jfif"></a>
+                <a href=""><img src="k.jfif"></a>
+                <a href=""><img src="k.jfif"></a>
+                <a href=""><img src="k.jfif"></a>
+            </div>
+        
+            <br><br>
+        
+            <div id="info">
+                <a href="aboutus.html">About us</a>
+                <a href="meetourteam.html">Meet our team</a>
+                <a href="contactus.html">Contact us</a>
+                <a href="returns.html">Returns</a>
+                <br><br>
+                <a class="fa fa-facebook" href=""></a>
+                <a class="fa fa-instagram" href=""></a>
+                <br><br><br><br><br><br>
+                <div>
+                    copyright &copy; 2020 Chic Boutique.
+                </div>
+            </div>
         </div>
     </div>
 </body>

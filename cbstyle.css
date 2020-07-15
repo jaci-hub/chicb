@@ -1,12 +1,37 @@
 a{
   text-decoration: none;
+  color: black
 }
 /*HAS EVERYTHING TILL SEARCH*/
 #tops{
   background-color: white;
   position: fixed;
-  width: 98.95%;
+  width: 100%;
   top: 0%;
+}
+#baixo{
+  width: 100%;
+}
+header{
+  min-height: 100px;
+}
+body{
+  min-height: 400px;
+}
+#info{
+  min-height: 100px;
+}
+#header #body{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+@-ms-viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
 }
 /*HAS THE CHIC BOUTIQUE HEADING*/
 #ftops{
@@ -23,30 +48,48 @@ float: right;
 padding-bottom: 15px;
 }
 /*DONATION DIVISION*/
-.dona{
+#menu{
 float: left;
-margin-left: 150px;
-background: none;
-border-radius: 3px;
-font-size: large;
-padding: 5px;
+margin-left: 10%;
+font-size: x-large;
+cursor: pointer;
+text-decoration: none;
 }
-.dona a{
-  color: black;
+#menu li{
+  margin: 30px 30px 30px 0px;
+  list-style-type: none;
 }
 
+#submenu{
+  display: none;
+}
+
+#menu:hover #submenu{
+  display: block;
+  position: absolute;
+  background-color: white;
+}
+
+#menu #submenu a:hover{
+  color: grey;
+}
 /*SEARCH DIVISION*/
-.btn2{
+.dona{
  float: right;
- margin-right: 150px;  
+ margin-right: 10%;
+ font-size: large;  
+}
+.dona a{
+font-size: x-large;
+color: black;
 }
 
 /*MEN AND WOMEN SIDE-BY-SIDE*/
 #sex{
 width: 100%;
 height: 500px;
-justify-content: center;
 }
+
 /*MEN AND WOMEN SIDE-BY-SIDE HEADINGS*/
 #sex h1{
 margin-top: 0;
@@ -55,7 +98,7 @@ text-align: center;
 /*MEN SECTION*/
 #men{
   float: left;
-  margin-left: 150px;
+  margin-left: 10%;
 background-image: url(men.png);
 }
 #thesex h1{
@@ -71,9 +114,7 @@ text-align: center;
 .thehead a{
   padding: 10px;
 }
-#thehead::-webkit-scrollbar{
- width: 0px;
-}
+
 #thehead1{
   justify-content: center;
   text-align: center;
@@ -97,15 +138,11 @@ margin:50px auto;
 padding-top: 50%;
 color: white;
 }
-.cmenima:hover{
-transition: .5s;
-transform: scale(1.09);
-}
 
 /*WOMEN SECTION*/
 #women{
   float: right;
-  margin-right: 150px;
+  margin-right: 10%;
 background-image: url(women.jpg);
 }
 
@@ -125,10 +162,7 @@ height: 500px;
   padding-top: 45%;
   color: white;
 }
-.rep:hover{
- filter: brightness(.89); 
-transition: .5s;
-}
+
 /*NEW ITEMS GENERAL*/
 #newItems{
   width: 90%;
@@ -155,7 +189,6 @@ transition: .5s;
 
 /*ITEMS GENERAL*/
 #items{
-padding: 50px;
 margin: 10px auto;
 width: 90%;
 justify-content: center;
@@ -172,30 +205,15 @@ box-sizing: border-box;
 /*INFO*/
 #info{
 width: 100%;
-height: 100px;
+height: 200px;
 text-align: center;
-padding-top: 50px;
-padding-bottom: 50px;
 }
 #info a{
   font-size: larger;
   color: black;
   margin: 10px;
 }
-#info a:hover{
-  transform: scale(1.5);
-  transition: .5s;
-}
-
-/*FOOTER*/
-#footer{
-width: 100%;
-text-align: center;
-}
-/*STUFF AT THE BOTTOM (ABOUT, MEET US, ETC)*/
+/* ABOUT, MEETOUR TEAM, DONATE RETURNS... */
 #abp{
-  width: 70%;
-  padding-left: 15%;
-  text-align: justify;
-  justify-content: center;
+  text-align: center;
 }
